@@ -143,9 +143,17 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   backdrop-filter: blur(10px);
   background-color: #0000004d;
+}
+
+.nav_open {
+  overflow: hidden;
+}
+
+.mobile_nav {
+  display: none;
 }
 
 .logo {
@@ -171,6 +179,20 @@ header {
   margin: 0;
 }
 
+nav.navbar {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.header_icon {
+  display: flex;
+  align-items: center;
+}
+
+.header_icon svg + svg {
+  margin-left: 10px;
+}
+
 .navbar-nav li + li {
   margin-left: 35px;
 }
@@ -186,7 +208,7 @@ header {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
-  padding: 35px 20px;
+  padding: 30px 20px;
 }
 
 /* Hero Section */
