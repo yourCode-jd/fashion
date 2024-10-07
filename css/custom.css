@@ -209,6 +209,24 @@ nav.navbar {
   font-size: 14px;
   font-weight: 500;
   padding: 30px 20px;
+  position: relative;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover:after {
+  width: 100%;
 }
 
 /* Hero Section */
@@ -240,8 +258,8 @@ nav.navbar {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
-
 .hero_content h1 {
   font-size: 90px;
   text-transform: uppercase;
@@ -251,8 +269,11 @@ nav.navbar {
 }
 
 .hero_btn {
-  margin-top: 50px;
+  margin-top: 80px;
   background: var(--bg-color);
+  min-width: 150px;
+  min-height: 50px;
+  font-size: 14px;
 }
 
 /* Feature */
@@ -592,6 +613,22 @@ footer {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  position: relative;
+}
+
+.footer_item ul a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
+.footer_item ul a:hover:after {
+  width: 100%;
 }
 
 .footer_item ul li + li {
@@ -770,10 +807,6 @@ footer {
     max-height: 400px;
   }
 
-  .products_title {
-    font-size: 28px;
-  }
-
   .instaFeed .products_items,
   .products_items {
     flex: 0 0 calc(50% - 10px);
@@ -823,6 +856,11 @@ footer {
   .testimonial_person {
     font-size: 14px;
   }
+
+  .TrendingProduct_items {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -855,5 +893,19 @@ footer {
 
   .TrendingProduct_wrap {
     width: auto;
+  }
+
+  .TrendingProduct_items {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .TrendingProduct_content {
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .TrendingProduct_content h2 {
+    font-size: 28px;
   }
 }
