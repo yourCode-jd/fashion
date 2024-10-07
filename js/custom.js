@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  // menu toggle
+  $(".toggle_icon").click(function () {
+    $("body").toggleClass("nav_open");
+  });
+  //
   $(".products_list").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
