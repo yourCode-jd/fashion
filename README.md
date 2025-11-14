@@ -13,8 +13,6 @@ A playful, image-forward landing experience that helps customers discover outfit
 
 ## 🖼️ Screenshots
 
-(Add your screenshots below)
-
 ![Desktop View](./Images/AuraAttire_desktop.png)  
 ![Responsive View](./Images/AuraAttire_mobile.png)
 
