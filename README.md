@@ -7,7 +7,7 @@ A playful, image-forward landing experience that helps customers discover outfit
 
 ## 🚀 Github Demo
 
-[View Here](https://yourcode-jd.github.io/fashion/)
+[View Here](https://yourcode-jd.github.io/AuraAttire/)
 
 ---
 
